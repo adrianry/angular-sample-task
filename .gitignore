@@ -4,6 +4,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+bower_components
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

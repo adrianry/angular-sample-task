@@ -1,0 +1,25 @@
+{
+  "name": "angular-simpletask",
+  "version": "0.0.0",
+  "authors": [
+    "Adrian"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.3.14",
+    "angular-messages": "~1.3.14",
+    "angular": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "bootswatch": "~3.3.2",
+    "lodash": "~3.3.1"
+  }
+}
