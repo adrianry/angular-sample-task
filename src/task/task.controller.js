@@ -6,13 +6,34 @@
 angular.module('formApp')
 .controller('formController', taskController);
 
-function taskController ($scope, $state, formSteps) {
+// ist das so wie papa das will mit der nachträglichen injection?
+//.controller('formController').$inject = ['$http'];
+
+function taskController ($scope, $state, formSteps, $http) {
 
     // we will store all of our form data in this object
     $scope.formData = {};
     $scope.formStepSubmitted = false;
+    var stateModel;
+
+    $http.get('task/task.json').success (
+        function(data){
+           stateModel = data;
+        }
+    );
 
     var nextState = function (currentState) {
+        var resultNextState;
+        for (var step in stateModel){
+            console.log("currentState: " + stateModel[step].currentState);
+            console.log("nextState: " + stateModel[step].nextState);
+            if(currentState == stateModel[step].currentState) {
+                //wenn der currentStep im json gefunden, return den nextStep
+                resultNextState = stateModel[step].nextState;
+            }
+        }
+        return resultNextState;
+/*
         //mapping zwischen step und folge-step
         switch (currentState) {
             case 'form.profile':
@@ -24,6 +45,7 @@ function taskController ($scope, $state, formSteps) {
             default:
                 alert('Did not match any switch');
         }
+*/
     };
 
     var updateValidityOfCurrentStep = function (updatedValidity) {
@@ -54,6 +76,6 @@ function taskController ($scope, $state, formSteps) {
 
     // function to process the form
     $scope.processForm = function () {
-        alert('awesome!');
+        alert('das ist eine funktion mit name processForm()');
     };
 };

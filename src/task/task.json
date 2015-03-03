@@ -1,0 +1,10 @@
+[
+    {
+      "currentState":"form.profile",
+      "nextState":"form.interests"
+    },
+    {
+      "currentState":"form.interests",
+      "nextState":"form.payment"
+    }
+]
