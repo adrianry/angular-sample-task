@@ -1,10 +1,23 @@
 [
     {
-      "currentState":"form.profile",
-      "nextState":"form.interests"
+      "uiSref":"form.profile",
+      "valid":"false",
+      "template":"form-profile.html",
+      "currentState": "form.profile",
+      "nextState": "form.interests"
     },
     {
-      "currentState":"form.interests",
-      "nextState":"form.payment"
+      "uiSref":"form.interests",
+      "valid":"false",
+      "template":"form-interests.html",
+      "currentState": "form.interests",
+      "nextState": "form.payment"
+    },
+    {
+      "uiSref":"form.pament",
+      "valid":"false",
+      "template":"form-payment.html",
+      "currentState": "form.pament",
+      "nextState": ""
     }
 ]
