@@ -45,21 +45,22 @@ angular.module('formApp', ['ngAnimate', 'ngMessages', 'ui.router'])
                 // only go to next if previous is valid
                 var toStateIndex = _.findIndex(formSteps, function (formStep) {
                     return formStep.uiSref === toState.name;
-
                 });
 
                 console.log('toStateIndex', toStateIndex)
                 if (toStateIndex === 0) {
-                    //start schritt
+                    //erster schritt ist immer erlaubt
                     canGoToStep = true;
                 } else {
                     canGoToStep = formSteps[toStateIndex - 1].valid;
                 }
                 console.log('canGoToStep', toState.name, canGoToStep, toStateIndex);
+                console.log("schrittwechsel erlaubt!")
 
                 // Stop state changing if the previous state is invalid
                 if (!canGoToStep) {
                     // Abort going to step
+                    console.log("schrittwechsel nicht erlaubt!")
                     event.preventDefault();
                 }
             });

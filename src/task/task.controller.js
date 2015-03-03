@@ -67,15 +67,18 @@ function taskController ($scope, $state, formSteps, $http) {
             // mark the step as valid so we can navigate to it via the links
             updateValidityOfCurrentStep(true /*valid */);
 
+            console.log("Formular ok.");
+
             $state.go(nextState($state.current.name));
         } else {
             // mark the step as valid so we can navigate to it via the links
             updateValidityOfCurrentStep(false /*not valid */);
+            console.log("Formular nicht ok.");
         }
     };
 
     // function to process the form
     $scope.processForm = function () {
-        alert('das ist eine funktion mit name processForm()');
+        alert('Prozess abgeschlossen, Produkt wird erstellt.');
     };
 };
