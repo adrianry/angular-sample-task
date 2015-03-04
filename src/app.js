@@ -14,9 +14,9 @@ angular.module('formApp', ['ngAnimate', 'ngMessages', 'ui.router'])
      */
     .factory('formSteps', ['$http', function ($http) {
         return [
-            {uiSref: 'form.profile', valid: false},
-            {uiSref: 'form.interests', valid: false},
-            {uiSref: 'form.payment', valid: false}
+            {uiSref: 'form.stammdaten', valid: false},
+            {uiSref: 'form.produktwahl', valid: false},
+            {uiSref: 'form.abschluss', valid: false}
         ]
         /*
         var promise = $http.get('task/task.json').success(

@@ -1,23 +1,23 @@
 [
     {
-      "uiSref":"form.profile",
+      "uiSref":"form.stammdaten",
       "valid":"false",
-      "template":"form-profile.html",
-      "currentState": "form.profile",
-      "nextState": "form.interests"
+      "template":"form-stammdaten.html",
+      "currentState": "form.stammdaten",
+      "nextState": "form.produktwahl"
     },
     {
-      "uiSref":"form.interests",
+      "uiSref":"form.produktwahl",
       "valid":"false",
-      "template":"form-interests.html",
-      "currentState": "form.interests",
-      "nextState": "form.payment"
+      "template":"form-produktwahl.html",
+      "currentState": "form.produktwahl",
+      "nextState": "form.abschluss"
     },
     {
-      "uiSref":"form.pament",
+      "uiSref":"form.abcshluss",
       "valid":"false",
-      "template":"form-payment.html",
-      "currentState": "form.pament",
+      "template":"form-abschluss.html",
+      "currentState": "form.abschluss",
       "nextState": ""
     }
 ]

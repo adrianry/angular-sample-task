@@ -4,10 +4,10 @@
 // our controller for the form
 // =============================================================================
 angular.module('formApp')
-.controller('formController', taskController);
+.controller('taskController', taskController);
 
 // ist das so wie papa das will mit der nachträglichen injection?
-//.controller('formController').$inject = ['$http'];
+//.controller('taskController').$inject = ['$http'];
 
 function taskController ($scope, $state, formSteps, $http) {
 

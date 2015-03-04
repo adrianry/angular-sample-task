@@ -12,29 +12,29 @@ angular.module('formApp')
             .state('form', {
                 url: '/form',
                 templateUrl: 'task/form.html',
-                controller: 'formController'
+                controller: 'taskController'
             })
 
             // nested states
             // each of these sections will have their own view
             // url will be nested (/form/profile)
-            .state('form.profile', {
-                url: '/profile',
-                templateUrl: 'task/form-profile.html'
+            .state('form.stammdaten', {
+                url: '/stammdaten',
+                templateUrl: 'task/form-stammdaten.html'
             })
 
             // url will be /form/interests
-            .state('form.interests', {
-                url: '/interests',
-                templateUrl: 'task/form-interests.html'
+            .state('form.produktwahl', {
+                url: '/produktwahl',
+                templateUrl: 'task/form-produktwahl.html'
             })
 
             // url will be /form/payment
-            .state('form.payment', {
-                url: '/payment',
-                templateUrl: 'task/form-payment.html'
+            .state('form.abschluss', {
+                url: '/abschluss',
+                templateUrl: 'task/form-abschluss.html'
             });
         // catch all route
         // send users to the form page
-        $urlRouterProvider.otherwise('/form/profile');
+        $urlRouterProvider.otherwise('/form/stammdaten');
     });
