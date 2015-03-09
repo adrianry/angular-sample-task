@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" />
+  <component name="IdProvider" IDEtalkID="8A02881AD457A08C7BAFD325B4D30549" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="jdk1.8.0_25" project-jdk-type="JavaSDK" />
 </project>
